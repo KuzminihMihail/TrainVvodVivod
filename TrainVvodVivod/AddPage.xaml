@@ -1,0 +1,25 @@
+﻿<Page x:Class="TrainVvodVivod.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TrainVvodVivod"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddPage" Background="AntiqueWhite">
+
+    <Viewbox Stretch="Fill">
+        <Grid>
+            <Button x:Name="AddZapBtn" Content="Добавить запись" Height="40" FontSize="20" Margin="589,370,40,40" Click="AddZapBtnClick"/>
+            <Button x:Name="BackPageBtn" Content="Назад" Height="40" FontSize="20" Margin="31,370,598,40" Click="BackPageBtnClick"/>
+            <Label Content="Отчество" Height="35" FontSize="17" Margin="94,160,621,256"/>
+            <Label Content="Почта" Height="35" FontSize="17" Margin="116,200,621,215"/>
+            <Label Content="Дата рождения" Height="35" FontSize="17" Margin="47,240,621,174"/>
+            <Label Content="Телефон" Height="35" FontSize="17" Margin="94,280,621,135"/>
+            <TextBox x:Name="OtchestvoTb" Text ="{Binding Отчество}"  Height="35" Width="200" Margin="197,160,403,256"/>
+            <TextBox x:Name="PochtaTb" Text="{Binding Почта}" Height="35" Width="200" Margin="197,200,403,215"/>
+            <TextBox x:Name="DataRojdeniyaTb" Text="{Binding дата_рожденя}" Height="35" Width="200" Margin="197,240,403,175"/>
+            <TextBox x:Name="TelefonTb" Text="{Binding телефон}" Height="35" Width="200" Margin="197,280,403,135"/>
+        </Grid>
+    </Viewbox>
+</Page>
